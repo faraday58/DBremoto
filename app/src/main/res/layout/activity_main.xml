@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            />
+        <EditText
+            android:layout_width="185dp"
+            android:id="@+id/edtID"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Album"
+            />
+        <EditText
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAlbum"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artista"
+            />
+        <EditText
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtArtista"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Guardar"
+        android:onClick="onClickGuardardatos"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar"
+        android:layout_gravity="center"
+        android:onClick="onClickConsultaDatos"/>
+
+</LinearLayout>
